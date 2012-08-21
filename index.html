@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>Manoli Liodakis</title>
+
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="author" content="Manoli Liodakis" />
+<meta name="description" content="Personal Webpage" />
+<meta name="keywords" content="Manoli, Liodakis" />
+<meta name="robots" content="index, follow, noarchive" />
+<meta name="googlebot" content="noarchive" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+
+</head>
+<body>
+
+	<!-- header starts-->
+	<div id="header-wrap"><div id="header" class="container_16">						
+		
+		<h1 id="logo-text"><a href="index.html" title="">Manoli Liodakis</a></h1>				
+	    <p id="intro">liodakis@cs.stanford.edu | 801.815.8924</p>
+	
+	<!-- header ends here -->
+	</div></div>
+	
+	<!-- content starts -->
+	<div id="content-outer"><div class="container_16">
+	
+		<!-- main -->
+		<div id="main" class = "grid_15">
+			<h2><a href="index.html">Curriculum Vitae</a></h2>
+			<br/>
+			<p>
+My name is Manoli Liodakis and I am a masters student majoring in Electrical Engineering at Stanford University. I am currently involved with research in Chris Manning's Natural Language Processing Lab and in Dan Boneh's Security Lab. When I am not studying, I enjoy hacking on open source projects and implementing sites that make the Internet a more friendly place. Below are links to both my resume and some of my current research projects.<br/><br/>
+
+<a class="more-link" href="resume.pdf">My Resume</a> 
+			</p>		
+		
+	
+			<h2>Research</h2>
+			<br/>
+Over the last two years I have worked on various research projects on a variety of different topics from security, to probablistic graphical models, to image recognition. The following papers highlight some of my more recent research projects:			
+			</p>		
+		    <h3>Security Analysis of Real-time Protocols</h3>
+		    <p>
+		    The Session Initiation Protocol (SIP) is a signaling protocol designed to control multimedia communication sessions. The basic structure of SIP involves registration with a proxy
+server, calls to invite, ring, and ready, a media session, and bye messages with acknowledgements. Because SIP is designed for flexibility across devices and simplicity, there is
+no implicit security in the SIP protocol. The SIP standard described in RFC 3621
+includes suggested security protocols designed to provide user-to-user security across the
+protocol. The Secure Real-time Transport Protocol (SRTP) is a profile of RTP designed
+to provide message security, authentication, integrity, and replay protection across media
+sessions. In this paper, we analyze the security of the standard implementation of SIP,
+the recommended secure implementation of SIP as per RFC 3621, and the security of a
+media session sent over SRTP. </p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp<a class="more-link" href="paper.pdf">Continue Reading</a> 
+
+	<h3>Edge Prediction via Relational Markov Networks</h3>
+		    <p>
+		    In the last decade the computer science community has increasingly relied on graphical networks to model user interaction in a variety of different scenarios. For example, in social networks nodes have been used to represent users and their accompanying edges to represent friendships. In publication networks authors are represented by nodes and coauthored papers by edges. In general these models span large networks with thousands, if not millions, of nodes. As research groups gain access to large datasets that model these networks, one of the questions that seems to emerge is: Is there a way to predict future edges in a graphical network? <br/><br/>Specifically, given a network G at time t is there a way to predict the edges that will
+be created in the network between time t and t + 1. We define this question as the edge-prediction problem. Note that this problem is also related to the problem of inferring missing edges from a partially observed network. In these networks we assume that only a subset of all interactions are visible, it is then the goal of the algorithm to infer the missing links. While this problem is related to the one at hand, it deals with a graph G at time t and does not focus on the evolution inherent to many of these large networks.
+    While research has been done by looking simply at the nodes and and edges of the graph, we hoped to expand on this research by not only using the graph structure, but also additional data associated with each connection to make more informed predictions. Specifically, we attempt to infer connections by representing the graphical network as a Relational Markov network (RMN) and then learn on this network, using the data to predict probability scores for new edges being created between time t and t + 1.
+ </p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp<a class="more-link" href="link_prediction.pdf">Continue Reading</a> 
+	
+		<h3>Twitter Relevance Filtering via Joint Bayes Classifiers from User Clustering</h3>
+		    <p>
+		    The task of classifying feed item data, such as email or RSS items, has been a subject of proposed learning algorithms since the mid 1990s. Unlike spam classifiers, relevance classification cannot use a universal training set, but rather must be trained by each individual user, however most relevance classifiers use an approach similar to spam classifiers. Most research in relevance classification has employed a classifier over an individualized training set, usually one of a naive Bayesian classifier, support vector machines, or neural-network, case-based, or knowledge-based approaches. However, in practice, few of these algorithms have been implemented, and those that have enjoy only limited success. In large part, this is due to common user expectations with regard to classification accuracy. Users tolerate few errors and expect immediate results. The past few years have seen a radical shift in the way users consume data. In particular, services like Twitter have dramatically increased social feed consumption. This poses the opportunity to build implicit social graphs to improve the quality of relevance classification over smaller training sets. In this paper, we examine the use of Hierarchical Clustering on Twitter users to build these implicit social graphs and to then use the multinomial Bayesian classification approach over the augmented training sets to do Tweet relevance classification. In this way, we leverage the power of social feeds to improve the quality and training speed of individualized relevance classifiers.
+
+ </p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp<a class="more-link" href="paper1.pdf">Continue Reading</a> 		
+ 
+ 		<h3>Advanced Computer Vision Techniques with Application to Three-Dimensional Multi-Object Tracking</h3>
+		    <p>
+Modern object recognition and tracking programs, while effective in recognizing a single object, consistently fail when assigned to tasks dealing with multiple objects. Case-specific training sets and the hand-tuning of variables prevent such programs from being truly generalizable. In an attempt to overcome this inherent flaw, we have implemented a supervised learning algorithm that is neither limited by the choice of objects nor by programmable parameters. Through the use of Histograms of Oriented Gradients, the algorithm recognizes and tracks random objects. It is trained for each object on only a small number of images- approximately 500 still-image photographs. HOG is a robust feature set for shape based object detection. Classification and tracking efficiency is also maintained through the use of advanced implementations of both non-maximum suppression and particle filtering. Probabilistic modeling increases the likelihood of true positives and therefore increases accuracy. Increased classification accuracy allows the algorithm to be both theoretically interesting and a practical alternative to current recognition and tracking techniques.
+
+
+ </p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp<a class="more-link" href="Hogs.pdf">Continue Reading</a> 		
+		
+		<!-- main ends -->
+		</div>
+		
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>	
+	
+	<!-- contents end here -->	
+	</div></div>
+
+	<!-- footer starts here -->	
+	<div id="footer-wrapper" class="container_16">
+	
+		<div id="footer-content">
+			
+		
+		</div>
+	
+		<div id="footer-bottom">
+	
+			<p class="bottom-left">			
+			&nbsp; &copy;2012 Manoli Liodakis &nbsp; &nbsp;
+			</p>	
+			
+			<p class="bottom-right" >
+				<a href="index.html">Home</a> |				
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
+		   	    <a href="http://validator.w3.org/check/referer">XHTML</a>
+			</p>
+	
+		</div>	
+			
+	</div>
+	<!-- footer ends here -->
+
+</body>
+</html>
